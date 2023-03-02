@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // getName();          // We can access function before function description structure
+        // console.log(x);     // But Variable are not accessable before initialising structure
+        console.log(getName);
+        // console.log(getName2);
+
+        var x = 7;
+        function getName(){
+            console.log("Namaste javaScript");
+        }
+        var getName2 = () =>{
+            console.log("Namaste javaScript 2.0");
+        }
+        // getName();
+        // console.log(x);
+    </script>
+</body>
+</html>
