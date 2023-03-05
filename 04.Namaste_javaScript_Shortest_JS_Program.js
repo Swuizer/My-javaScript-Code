@@ -1,0 +1,1 @@
+// No Code is the Shortest program in the javaScript.
