@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTML and OuterHTML - JavaScript</title>
+</head>
+<body>
+    <!-- Code With Harry -->
+    Hello World
+    <span id="first"><b>Hey I am span</b></span>
+
+    <script>
+        console.log(document.getElementsByTagName("span")[0]);
+        // Output: <span>Hey I am span</span>
+        console.dir(document.getElementsByTagName("span")[0]);
+        // Output: > span (represent like object)
+        console.log(document.body.firstChild.nodeName);
+        // Output: #text
+        console.log(document.body.firstElementChild.nodeName);
+        // Output: SPAN
+        console.log(document.getElementById("first").innerHTML);
+        console.log(document.getElementById("first").outerHTML);
+        console.log(document.getElementById("first").innerText);
+        console.log(document.body.textContent);
+        console.log(document.body.firstChild.data);
+
+    </script>
+</body>
+</html>
